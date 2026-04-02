@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* SECTION */
+#main{
+    display: grid;
+    grid:
+    "Navigation" 50px
+    "Adding" 100px
+    "List" 700px
+    "Total" 50px
+    "Copy" 50px
+    /
+    500px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 200px;
+    border: 2px solid rgb(157, 140, 157);
+    border-top-left-radius: 22.5px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 22.5px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(215, 215, 234);
+}
+
+
+/* SECTION */
+nav{
+    grid-area: Navigation;
+    display: flex;
+    justify-content: right;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 99
+}
+#box-light{
+    background-color: rgb(207, 194, 194);
+    width: 10%;
+    border-radius: 17.5px;
+    margin: 2%;
+    border: 1px solid rgba(44, 42, 42, 0.421);
+    display: flex;
+    justify-content: left;
+}
+#circle-icon{
+    background-color: grey;
+    width: 45%;
+    height: 80%;
+    border: 1px solid rgba(44, 42, 42, 0.421);
+    border-radius: 45px;
+    margin: 5% 7.5%;
+    cursor: pointer;
+}
+
+/* SECTION */
+#head-list{
+    grid-area: Adding;
+    background-color:rgb(207, 194, 194);
+    width: 99.2%
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+    text-shadow: 5px 5px 5px rgb(118, 114, 114);
+    margin-bottom: 5%;
+    padding-top: 15%;
+}
+#head-list div{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7.5%;
+}
+#to-do{
+    border: none;
+    padding: 2% 5%;
+    width: 50%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right: 2%;
+}
+#submit-list{
+    width: 15%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    color: rgb(61, 59, 59);
+    cursor: pointer;
+}
+
+
+
+
+
+
+#list-container{
+    grid-area: List;
+    width: 100%;
+}
+#list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 2% auto;
+    padding: 2%;
+    border-radius: 20px;
+    background-color:rgba(31, 30, 30, 0.301);
+    color: white;
+}
+#list-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+#task-done{
+    padding: 5px;
+    width: 50px;
+    margin: 2%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(153, 160, 153);
+}
+#task-delete{
+    padding: 5px;
+    width: 50px;
+    margin: 2%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(240, 83, 83);
+    color: rgb(10, 9, 9);
+}
+
+
+
+
+
+
+#list-total{
+    grid-area: Total;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3% 0;
+    color: rgb(82, 74, 74);
+    width: 80%;
+    margin: 0 auto;
+}
+#clear-list{
+    padding: 2%;
+    border-radius: 15px;
+    background-color: rgb(207, 194, 194);
+    color: white;
+    border: 1px solid rgb(174, 135, 135);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+#copy{
+    grid-area: Copy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 194, 194);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 1.1rem;
+    width: 99.2%
+}
+
+.color{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
