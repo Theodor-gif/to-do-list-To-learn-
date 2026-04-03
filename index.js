@@ -19,11 +19,7 @@ changeMode.addEventListener('click', () => {
     baseMode.style.justifyContent = 'right';
 
 
-    bodyElement.classList.add('light-mode');
-    bodyElement.classList.toggle('light-mode');
-
-    footerElement.classList.toggle('color');
-})
+});
 
 addElement.addEventListener('click', () => {
     const newList = document.createElement('section');
@@ -31,7 +27,7 @@ addElement.addEventListener('click', () => {
         <div id="list">
             <h2 id="task-name">${reasonList.value}</h2>
                 <div id="list-btn">
-                    <button type="submit" id="task-done">Done</button>
+                    <button type="submit" id="task-done">Check</button>
                     <button type="reset" id="task-delete">Delete</button>
                 </div>
         </div>
@@ -40,17 +36,15 @@ addElement.addEventListener('click', () => {
 
     newSection.appendChild(newList);
 
-    const doneTask = document.querySelector('#task-done');
+    const check = newList.querySelector('#task-done');
+    check.addEventListener('click', () => {
+        check.classList.toggle('color');
+    })
 
-    doneTask.addEventListener('click', () => {
-        doneTask.classList.toggle('color');
-    });
-
-    const deleteTask = document.querySelector('#task-delete');
-
-    deleteTask.addEventListener('click', () =>{
+    newList.querySelector('#task-delete').addEventListener('click', () => {
         newList.remove();
     })
+
     
 });
 

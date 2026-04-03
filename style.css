@@ -7,18 +7,9 @@
 
 /* SECTION */
 #main{
-    display: grid;
-    grid:
-    "Navigation" 50px
-    "Adding" 100px
-    "List" 700px
-    "Total" 50px
-    "Copy" 50px
-    /
-    500px;
+    
     width: 500px;
-    margin: 0 auto;
-    margin-top: 200px;
+    margin: 200px auto;
     border: 2px solid rgb(157, 140, 157);
     border-top-left-radius: 22.5px;
     border-top-right-radius: 15px;
@@ -30,12 +21,11 @@
 
 /* SECTION */
 nav{
-    grid-area: Navigation;
     display: flex;
     justify-content: right;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 99
+    width: 100%;
 }
 #box-light{
     background-color: rgb(207, 194, 194);
@@ -45,6 +35,7 @@ nav{
     border: 1px solid rgba(44, 42, 42, 0.421);
     display: flex;
     justify-content: left;
+    height: 30px;
 }
 #circle-icon{
     background-color: grey;
@@ -58,9 +49,9 @@ nav{
 
 /* SECTION */
 #head-list{
-    grid-area: Adding;
     background-color:rgb(207, 194, 194);
-    width: 99.2%
+    width: 100%;
+    margin-bottom: 50px;
 }
 h1{
     text-align: center;
@@ -123,7 +114,7 @@ h1{
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    background-color: rgb(153, 160, 153);
+    background-color: rgb(153, 181, 153);
 }
 #task-delete{
     padding: 5px;
@@ -142,9 +133,8 @@ h1{
 
 
 #list-total{
-    grid-area: Total;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 3% 0;
     color: rgb(82, 74, 74);
@@ -167,7 +157,6 @@ h1{
 
 
 #copy{
-    grid-area: Copy;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,10 +164,16 @@ h1{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     font-size: 1.1rem;
-    width: 99.2%
+    width: 100%;
+    padding: 25px 0;
+    margin-top: 50px;
 }
 
 .color{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(6, 60, 13);
     color: rgb(255, 255, 255);
+}
+
+.position{
+    justify-content: left;
 }
